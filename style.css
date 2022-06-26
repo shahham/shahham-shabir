@@ -1,0 +1,80 @@
+:root {
+    --regular-text-color: #222222;
+    --regular-fg-color: #222222;
+    --regular-bg-color: #f7f8f9;
+
+    --primary-text-color: #222222;
+    --primary-fg-color: #ffffff;
+    --primary-bg-color: #222222;
+
+    --accent-text-color: #39b980;
+    --accent-fg-color: #ffffff;
+    --accent-bg-color: #56cb97;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--regular-text-color);
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: inherit;
+    text-decoration: none;
+    color: var(--primary-fg-color);
+    background-color: var(--primary-bg-color);
+}
+
+.instruction {
+    list-style-type: none;
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+}
+
+.step {
+    margin-right: 20px;
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--accent-text-color);
+}
+
+.step-text {
+    font-size: 18px;
+    color:var(--regular-text-color);
+}
+
+.header {
+    background-color: var(--accent-bg-color);
+    color: var(--accent-fg-color);
+}
+
+.header .promo {
+  background: url('./images/bg-image.png') right bottom no-repeat;
+  min-height: 570px;  
+}
+
+.footer {
+    background-color: var(--regular-bg-color);
+    color: var(--regular-text-color);
+}
